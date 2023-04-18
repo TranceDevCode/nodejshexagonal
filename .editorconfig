@@ -1,0 +1,12 @@
+root = true #Esto es el directorio raiz donde se va a resolver el editor config
+
+[*]
+indent_style = tab #Especificas como vas a gestionar la indentacion
+indent_size = 3 # especificas cuantro espacios te vas a mover en una indentacion
+end_of_line = lf #detecta el final de cada linea
+trim_trailing_whitespace = true #limpiar espacios en blanco
+insert_final_newline= true # insertar una linea al final del codigo
+charset = utf-8 #especificar  la estandarizacion de caracteres
+
+[*.md] # realizas una especificacion para edicion para ciertas extensiones
+indent_size = 4

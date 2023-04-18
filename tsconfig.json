@@ -1,18 +1,18 @@
 {
   "compilerOptions": {
-    "module": "CommonJS", /* Permite que mi codigo ts lo transpile al JS Nativo */
-    "esModuleInterop": true, /* Permite tener compatibilidad con otras extensiones y modulos de otros lenguaje y del mismo entorno */    
-    "resolveJsonModule": true, /* me permite darle soporte a impotar en mi codigo archivos json */
-    "moduleResolution": "node", /* permite reconocer o darle soporte absoluto a typescript al compilar */
-    "target": "ES2020", /* Me pertime especificar la estandarizacion del EcmaScript para mi proyecto*/
-    "noImplicitAny": true, /* Me permite definir que no me recomiende tipar con tipos any por default */
-    "sourceMap": true, /* Me permite crear un archivo js raiz identificador para cada archivo generado a partir de ts, se genera con el comando tsc */
-    "experimentalDecorators": true, /* me permite darle soporte a mi proyecto para trabajar con decoradores */
-    "emitDecoratorMetadata": true, /* Me permite que la data que generen los decoradores persistan en tiempo de ejecucion */
-    "strict": true, /* Me permite identificar algunas definiciones de errores para tu codigo  */
-    "baseUrl": "./", /* Me permite definir donde alojare mi directorio que tiene el codigo para produccion */
+    "module": "CommonJS" /* Permite que mi codigo ts lo transpile al JS Nativo */,
+    "esModuleInterop": true /* Permite tener compatibilidad con otras extensiones y modulos de otros lenguaje y del mismo entorno */,
+    "resolveJsonModule": true /* me permite darle soporte a impotar en mi codigo archivos json */,
+    "moduleResolution": "node" /* permite reconocer o darle soporte absoluto a typescript al compilar */,
+    "target": "ES2020" /* Me pertime especificar la estandarizacion del EcmaScript para mi proyecto*/,
+    "noImplicitAny": true /* Me permite definir que no me recomiende tipar con tipos any por default */,
+    "sourceMap": true /* Me permite crear un archivo js raiz identificador para cada archivo generado a partir de ts, se genera con el comando tsc */,
+    "experimentalDecorators": true /* me permite darle soporte a mi proyecto para trabajar con decoradores */,
+    "emitDecoratorMetadata": true /* Me permite que la data que generen los decoradores persistan en tiempo de ejecucion */,
+    "strict": false /* Me permite identificar algunas definiciones de codigo estandar */,
+    "baseUrl": "./" /* Me permite definir donde alojare mi directorio que tiene el codigo para produccion */,
     "outDir": "./build" /* Este es el directorio con mi codigo js para produccion */
   },
-  "exclude": ["node_modules"], /* Me permite ignorar el directorio de node module*/
-  "include": ["src/**/*.ts"],  /* me permite definir donde se va a encontrrar mi codigo a compilar/transpilar */
+  "exclude": ["node_modules"] /* Me permite ignorar el directorio de node module*/,
+  "include": ["src/**/*.ts"] /* me permite definir donde se va a encontrrar mi codigo a compilar/transpilar */
 }

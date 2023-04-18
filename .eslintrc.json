@@ -1,16 +1,17 @@
 {
-    "root": true, /* Ruta donde se encuentra el eslint y aplicara las reglas */
-    "plugins": ["@typescript-eslint"], /* Definimos que todos los plugins y parsers son heredados de typescript-eslint*/
-    "parser": "@typescript-eslint/parser", /* anadir reglas especificas de typescript*/
-    "extends": [ /* Plugins de soporte para typescript para eslint */
-        "eslint:recommended",
-        "plugin:@typescript-eslint/eslint-recommended",
-        "plugin:@typescript-eslint/recommended"
-    ],
-    "rules": { /* me permite especificar mi objeto de reglas o monitorear reglas  */
-        "quotes": ["error", "single"],
-        "@typescript-eslint/no-explicit-any": ["warn"],
-        "curly": "error",
-        "no-empty": "error"
-    }
+  "root": true /* Ruta donde se encuentra el eslint y aplicara las reglas */,
+  "plugins": ["@typescript-eslint"] /* Definimos que todos los plugins y parsers son heredados de typescript-eslint*/,
+  "parser": "@typescript-eslint/parser" /* anadir reglas especificas de typescript*/,
+  "extends": [
+    /* Plugins de soporte para typescript para eslint */ "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    /* me permite especificar mi objeto de reglas o monitorear reglas  */
+    "quotes": ["error", "single"] /* si no es comilla simple me tira error */,
+    "@typescript-eslint/no-explicit-any": ["warn"] /* Si hay tipos "any" los toma como warn */,
+    "curly": "error" /*  Si hay definiciones faltantes con {} me tire error*/,
+    "no-empty": "error" /* No se aceptan definiciones vacias */
+  }
 }

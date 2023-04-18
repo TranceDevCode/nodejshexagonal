@@ -1,0 +1,8 @@
+{
+    "printWidth":"80", /* Largo de la linea */
+    "sinqleQuote": false, /* si yo formateo en false toma comilla doble,  */
+    "semi": false, /* al formatear no es necesario agregar los punto y coma*/
+    "arrowParens": "avoid", hace referencia a los parentesis, por ejemplo en las arrow function cuando pasamos parametros, si pasamos un paremetro que pueda ser vacia
+    "trailingComma": "all" /* cada vez que una sentencia necesite coma, agregue la coma */
+}
+

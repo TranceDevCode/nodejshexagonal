@@ -1,6 +1,15 @@
-interface Teacher {
-    name: string
-}
+import ServerBootstrap from './bootstrap/server.bootstrap';
+import { Bootstrap } from './bootstrap/base.bootstrap';
+import Application from './app';
 
-const teacher: Teacher = {name: 'Miguel'};
-console.log(teacher);
+const serverBootstrap: Bootstrap = new ServerBootstrap(Application)
+
+;(async () => {
+  //
+  try {
+    const resultServer = await serverBootstrap.initialize()
+    console.log(resultServer)
+  } catch (e) {
+    console.log(e)
+  }
+})()
